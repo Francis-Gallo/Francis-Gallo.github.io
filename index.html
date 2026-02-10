@@ -3,114 +3,534 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Francis Gallo | AI & Machine Learning Engineer</title>
+  <title>Francis Gallo - AI Engineer & ML Specialist</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-<header class="hero">
-  <h1>Francis Gallo</h1>
-  <h2>AI & Machine Learning Engineer · Generative AI · RAG Systems</h2>
-  <p>
-    Master’s student in Artificial Intelligence with hands-on experience building
-    production-style AI systems including semantic search, RAG pipelines, and
-    local LLM applications.
-    <br /><br />
-    <strong>Seeking a 6-month AI / Data internship starting April 2026.</strong>
-  </p>
-
-  <div class="links">
-  <a href="https://github.com/Francis-Gallo" target="_blank">GitHub</a>
-  <a href="https://www.linkedin.com/in/francis-gallo-17877125a" target="_blank">LinkedIn</a>
-  <a href="mailto:francis.gallo@email.com">Contact</a>
-</div>
-
-</header>
-
-<section>
-  <h3>About Me</h3>
-  <p>
-    I’m an AI & Machine Learning engineer with a strong interest in Generative AI,
-    semantic search, and applied NLP. I enjoy building end-to-end systems, from
-    data ingestion and modeling to deployment, with a focus on scalability,
-    privacy, and real-world constraints.
-  </p>
-</section>
-
-<section>
-  <h3>Featured Projects</h3>
-
-  <div class="project">
-    <h4>Hybrid ATS Resume Analyzer ⭐</h4>
-    <p>
-      Production-grade Applicant Tracking System that evaluates resumes using
-      semantic similarity and local LLM feedback. Fully offline and privacy-safe.
-    </p>
-    <ul>
-      <li>Section-wise semantic analysis (Skills, Experience, Projects)</li>
-      <li>Embedding-based scoring (no keyword matching)</li>
-      <li>Hybrid ATS score with weighted aggregation</li>
-      <li>Local LLM feedback via LM Studio</li>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <i class="fas fa-robot"></i>
+      <span>Francis Gallo</span>
+    </div>
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#experience" class="nav-link">Experience</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
     </ul>
-    <p class="tech">
-      <strong>Tech:</strong> Python, Flask, LM Studio, Embeddings
-    </p>
-    <a href="https://github.com/Francis-Gallo/hybrid-ats-resume-analyzer" target="_blank">
-      View on GitHub →
-    </a>
+    <div class="nav-toggle" id="navToggle">
+      <i class="fas fa-bars"></i>
+    </div>
   </div>
+</nav>
 
-  <div class="project">
-    <h4>RAG Backend with FastAPI & PostgreSQL ⭐</h4>
-    <p>
-      Production-style Retrieval-Augmented Generation backend using PostgreSQL
-      and pgvector for scalable semantic search.
-    </p>
-    <ul>
-      <li>Document ingestion and embedding storage</li>
-      <li>Vector similarity search using pgvector</li>
-      <li>FastAPI-based clean backend architecture</li>
-      <li>Local OpenAI-compatible embedding models</li>
-    </ul>
-    <p class="tech">
-      <strong>Tech:</strong> Python, FastAPI, PostgreSQL, pgvector, Docker
-    </p>
-    <a href="https://github.com/Francis-Gallo/rag-postgres" target="_blank">
-      View on GitHub →
-    </a>
+<!-- Hero Section -->
+<section id="home" class="hero">
+  <div class="hero-background">
+    <div class="neural-network" id="neuralNetwork"></div>
+    <div class="particles" id="particles"></div>
+  </div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h1 class="hero-title">
+        <span class="gradient-text">Francis Gallo Sahayaraj</span>
+      </h1>
+      <h2 class="hero-subtitle">AI Engineer & Machine Learning Specialist</h2>
+      <p class="hero-description">
+        Master's student in Artificial Intelligence specializing in RAG Systems, LLMs, and Generative AI.
+        Building end-to-end AI pipelines for intelligent automation.
+      </p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn btn-primary">
+          <i class="fas fa-envelope"></i> Get In Touch
+        </a>
+        <a href="https://github.com/Francis-Gallo" target="_blank" class="btn btn-secondary">
+          <i class="fab fa-github"></i> View GitHub
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <i class="fas fa-graduation-cap"></i>
+          <span>MSc AI Student</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Paris, France</span>
+        </div>
+        <div class="stat">
+          <i class="fas fa-briefcase"></i>
+          <span>AI Engineer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator">
+    <i class="fas fa-chevron-down"></i>
   </div>
 </section>
 
-<section>
-  <h3>Other Projects</h3>
-  <ul>
-    <li><strong>Road Accident Mortality Prediction</strong> — ML models on 300k+ records</li>
-    <li><strong>Weather Prediction System</strong> — Azure ML pipelines</li>
-    <li><strong>Multi-Robot Warehouse Planning</strong> — AI planning & simulation</li>
-  </ul>
+<!-- About Section -->
+<section id="about" class="about">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <i class="fas fa-user"></i> About Me
+    </h2>
+    <div class="about-content" data-aos="fade-up">
+      <div class="about-text">
+        <p>
+          I'm a <strong>Master's student in Artificial Intelligence</strong> at ECE Paris Engineering School,
+          specializing in Machine Learning and Generative AI with a focus on RAG systems, LLMs, embeddings,
+          and document processing.
+        </p>
+        <p>
+          Currently working as an <strong>Automation & AI Engineer</strong> at Karma Com Solidarité, where I develop
+          LLM-based pipelines for extracting, structuring, and retrieving information from unstructured and
+          semi-structured data using embeddings and semantic search.
+        </p>
+        <p>
+          I'm passionate about building production-ready AI systems that solve real-world problems, with expertise
+          in Python, PyTorch, LangChain, and modern ML frameworks.
+        </p>
+        <div class="about-highlights">
+          <div class="highlight-card">
+            <i class="fas fa-brain"></i>
+            <h3>AI & ML Expert</h3>
+            <p>Deep Learning, NLP, RAG Systems, Generative AI</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-code"></i>
+            <h3>Full-Stack Developer</h3>
+            <p>Python, FastAPI, PostgreSQL, Docker</p>
+          </div>
+          <div class="highlight-card">
+            <i class="fas fa-rocket"></i>
+            <h3>Problem Solver</h3>
+            <p>End-to-end AI pipelines & automation workflows</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<section>
-  <h3>Skills</h3>
-  <p>
-    <strong>AI / ML:</strong> Machine Learning, NLP, Embeddings, RAG, LLMs<br />
-    <strong>Languages:</strong> Python, SQL<br />
-    <strong>Frameworks:</strong> FastAPI, Flask, PyTorch<br />
-    <strong>Cloud & Tools:</strong> Azure ML, Docker, PostgreSQL, Git
-  </p>
+<!-- Experience Section -->
+<section id="experience" class="experience">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <i class="fas fa-briefcase"></i> Experience
+    </h2>
+    <div class="timeline">
+
+      <!-- Current Work -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Automation & AI Engineer</h3>
+            <span class="timeline-badge current">Current</span>
+          </div>
+          <h4>Karma Com Solidarité</h4>
+          <p class="timeline-date">
+            <i class="fas fa-calendar"></i> Nov 2025 - Present |
+            <i class="fas fa-map-marker-alt"></i> Paris, France
+          </p>
+          <ul class="timeline-list">
+            <li>Developed LLM-based pipelines for extracting, structuring, and retrieving information from unstructured data using embeddings and semantic search</li>
+            <li>Designed end-to-end document processing systems including ingestion, preprocessing, vector storage, and query pipelines for secure information retrieval</li>
+            <li>Integrated AI agents with enterprise systems and APIs to automate data collection, validation, and generation of structured data</li>
+            <li>Implemented end-to-end automation pipelines combining databases, AI models, and workflow orchestration tools</li>
+            <li>Evaluated and improved RAG workflows by experimenting with chunking and retrieval strategies</li>
+          </ul>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">LangChain</span>
+            <span class="tech-tag">RAG</span>
+            <span class="tech-tag">LLMs</span>
+            <span class="tech-tag">APIs</span>
+            <span class="tech-tag">n8n</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education - Masters -->
+      <div class="timeline-item" data-aos="fade-left">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>MSc (M2) Artificial Intelligence</h3>
+            <span class="timeline-badge education">Education</span>
+          </div>
+          <h4>ECE Paris Engineering School</h4>
+          <p class="timeline-date">
+            <i class="fas fa-calendar"></i> 2024 - 2026 |
+            <i class="fas fa-map-marker-alt"></i> Paris, France
+          </p>
+          <ul class="timeline-list">
+            <li>Specializing in Machine Learning, Deep Learning, and Generative AI</li>
+            <li>Focus on RAG Systems, LLMs, NLP, and Production AI Pipelines</li>
+            <li>Advanced coursework in Azure ML, PyTorch, and LangChain</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education - Bachelors -->
+      <div class="timeline-item" data-aos="fade-right">
+        <div class="timeline-marker"></div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <h3>Bachelor of Engineering</h3>
+            <span class="timeline-badge education">Education</span>
+          </div>
+          <h4>St. Xavier's College - Computer Science & Engineering</h4>
+          <p class="timeline-date">
+            <i class="fas fa-calendar"></i> 2020 - 2024 |
+            <i class="fas fa-map-marker-alt"></i> India
+          </p>
+          <ul class="timeline-list">
+            <li>Strong foundation in algorithms, data structures, and software engineering</li>
+            <li>Built expertise in Python, machine learning, and AI development</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<section>
-  <h3>Education</h3>
-  <p>
-    <strong>MSc in Artificial Intelligence</strong><br />
-    ECE Paris
-  </p>
+<!-- Projects Section -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <i class="fas fa-laptop-code"></i> Featured Projects
+    </h2>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-icon">
+          <i class="fas fa-search"></i>
+        </div>
+        <h3>Hybrid ATS Resume Analyzer</h3>
+        <p>Production-grade ATS using semantic similarity and local LLM for privacy-first, offline resume analysis and ranking.</p>
+        <div class="project-tech">
+          <span>Flask</span>
+          <span>LM Studio</span>
+          <span>Embeddings</span>
+          <span>Python</span>
+        </div>
+        <a href="https://github.com/Francis-Gallo/hybrid-ats-resume-analyzer" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View Project
+        </a>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-icon">
+          <i class="fas fa-database"></i>
+        </div>
+        <h3>RAG Backend (FastAPI + PostgreSQL)</h3>
+        <p>Production-ready RAG backend with pgvector for scalable semantic search and document retrieval.</p>
+        <div class="project-tech">
+          <span>FastAPI</span>
+          <span>PostgreSQL</span>
+          <span>pgvector</span>
+          <span>Docker</span>
+        </div>
+        <a href="https://github.com/Francis-Gallo/rag-postgres" target="_blank" class="project-link">
+          <i class="fab fa-github"></i> View Project
+        </a>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-icon">
+          <i class="fas fa-brain"></i>
+        </div>
+        <h3>Document-Based Question Answering (RAG)</h3>
+        <p>End-to-end RAG pipeline with document ingestion, embedding, and retrieval for intelligent Q&A systems.</p>
+        <div class="project-tech">
+          <span>LangChain</span>
+          <span>ChromaDB</span>
+          <span>PyPDF</span>
+          <span>OpenAI</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="project-card" data-aos="fade-up">
+        <div class="project-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <h3>Multi-Robot Warehouse Planning</h3>
+        <p>Multi-agent AI planning with semantic retrieval and PDDL modeling for warehouse automation.</p>
+        <div class="project-tech">
+          <span>PDDL</span>
+          <span>LangChain</span>
+          <span>ChromaDB</span>
+          <span>Python</span>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="project-icon">
+          <i class="fas fa-heartbeat"></i>
+        </div>
+        <h3>Rapid Patient Mortality Prediction</h3>
+        <p>Trained and evaluated ML models on 300K+ records using SMOTE and hyperparameter tuning for healthcare decision support.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Scikit-learn</span>
+          <span>TensorFlow</span>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="project-icon">
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <h3>Weather Prediction using Azure ML</h3>
+        <p>Cloud-based prediction model with data preprocessing, model training, and deployment on Azure.</p>
+        <div class="project-tech">
+          <span>Azure ML</span>
+          <span>Python</span>
+          <span>Pandas</span>
+          <span>NumPy</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
 </section>
 
-<footer>
-  <p>© 2026 Francis Gallo</p>
+<!-- Skills Section -->
+<section id="skills" class="skills">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <i class="fas fa-cogs"></i> Skills & Technologies
+    </h2>
+    <div class="skills-grid">
+
+      <!-- Programming -->
+      <div class="skill-category" data-aos="fade-up">
+        <div class="skill-header">
+          <i class="fas fa-code"></i>
+          <h3>Programming</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span>Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 95%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Data Structures & Algorithms</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>SQL</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- AI & ML -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-header">
+          <i class="fas fa-brain"></i>
+          <h3>AI & Machine Learning</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span>RAG Systems</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 93%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Machine Learning</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 92%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Generative AI & LLMs</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>NLP & Embeddings</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Frameworks & Tools -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-header">
+          <i class="fas fa-tools"></i>
+          <h3>Frameworks & Tools</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span>LangChain</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>PyTorch & TensorFlow</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>FastAPI</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 88%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Docker</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Databases -->
+      <div class="skill-category" data-aos="fade-up">
+        <div class="skill-header">
+          <i class="fas fa-database"></i>
+          <h3>Databases & Platforms</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span>PostgreSQL (pgvector)</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>MongoDB & ChromaDB</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 83%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Oracle & MySQL</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 80%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cloud & Automation -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+        <div class="skill-header">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud & Automation</h3>
+        </div>
+        <div class="skill-items">
+          <div class="skill-item">
+            <span>Azure Machine Learning</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 82%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>n8n & APIs</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 85%"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Git & VS Code</span>
+            <div class="skill-bar"><div class="skill-fill" style="width: 90%"></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+        <div class="skill-header">
+          <i class="fas fa-users"></i>
+          <h3>Soft Skills</h3>
+        </div>
+        <div class="soft-skills">
+          <span class="soft-skill-tag">Problem Solving</span>
+          <span class="soft-skill-tag">Communication</span>
+          <span class="soft-skill-tag">Team Collaboration</span>
+          <span class="soft-skill-tag">Adaptability</span>
+          <span class="soft-skill-tag">Time Management</span>
+          <span class="soft-skill-tag">Leadership</span>
+          <span class="soft-skill-tag">Attention to Detail</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications -->
+    <div class="certifications" data-aos="fade-up">
+      <h3><i class="fas fa-certificate"></i> Certifications</h3>
+      <div class="cert-grid">
+        <div class="cert-badge">
+          <i class="fas fa-award"></i>
+          <span>IBM AI Engineering Professional Certificate</span>
+        </div>
+        <div class="cert-badge">
+          <i class="fas fa-award"></i>
+          <span>AWS Academy Cloud Foundations</span>
+        </div>
+        <div class="cert-badge">
+          <i class="fas fa-award"></i>
+          <span>MongoDB Certifications (Python, Data Modeling, GenAI)</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">
+      <i class="fas fa-envelope"></i> Get In Touch
+    </h2>
+    <div class="contact-content" data-aos="fade-up">
+      <div class="contact-info">
+        <div class="contact-text">
+          <h3>Looking for a 6-month internship</h3>
+          <p>Starting <strong>April 2026</strong> in <strong>Data / Automation / AI</strong></p>
+          <div class="availability">
+            <span><i class="fas fa-check-circle"></i> On-site</span>
+            <span><i class="fas fa-check-circle"></i> Hybrid</span>
+            <span><i class="fas fa-check-circle"></i> Remote</span>
+          </div>
+        </div>
+        <div class="contact-cards">
+          <a href="mailto:francisgallo2002@gmail.com" class="contact-card">
+            <i class="fas fa-envelope"></i>
+            <span>francisgallo2002@gmail.com</span>
+          </a>
+          <a href="tel:+33605690820" class="contact-card">
+            <i class="fas fa-phone"></i>
+            <span>+33 6 05 69 08 20</span>
+          </a>
+          <a href="https://www.linkedin.com/in/francis-gallo-17877125a" target="_blank" class="contact-card">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn Profile</span>
+          </a>
+          <a href="https://github.com/Francis-Gallo" target="_blank" class="contact-card">
+            <i class="fab fa-github"></i>
+            <span>GitHub Portfolio</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy; 2024 Francis Gallo Sahayaraj. All rights reserved.</p>
+      <div class="footer-social">
+        <a href="https://github.com/Francis-Gallo" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/francis-gallo-17877125a" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="mailto:francisgallo2002@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
